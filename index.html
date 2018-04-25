@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/application.js"></script>
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-  </head>
-  <body>
-  <div class="todos col-12 col-md-6 col-lg-12">
-    <p id="things-to-do">Your assignment needs to satisfy the following criteria:
-      Calculate and display the total price.<br>
-      Calculate and display the sub total price of each item. <br>
-      Allow user to add a new item.<br>
-      Allow user to delete an item.<br>
-      Use Git to manage version control and push your work to a GitHub repository.<br>
-  </p>
-  </div><!--todos--> 
+</head>
 
-  </body>
+<body>
+    <div class='container'>
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Title -->
+        <h2>To-do list</h2>
+        <p>Calculate and display the total price. </p>
+<p>Calculate and display the sub total price of each item.</p>
+<p>Allow user to add a new item.</p>
+<p>Allow user to delete an item.</p>
+<p>Use Git to manage version control and push your work to a GitHub repository.</p>
+        <div class="row">
+          <!-- The div where we will display to do list items -->
+          <div id="shopping-list" class="col-xs-12">
+          </div>
+          <div class="col-xs-4">
+            <!-- The input element for users to add To Do -->
+            <label>Item to Add</label>
+            <input id="shopping-input" class="form-control" placeholder="Add to Cart">
+            <label>Price</label>
+            <input id="price-input" class="form-control" placeholder="30">
+            <!-- A button for adding Shopping -->
+            <button id="add-button" type="button" class="btn btn-sm btn-primary">Add To Cart</button>
+            </div>
+
+            <div class="col-xs-6">
+              <!--add quantity value here--> 
+            </div>
+          
+
+         
+
+        </div>
+        <h2 id="where-total-price-goes">Total Price <span id="money">$</span></h2>
+      </div>
+    </div>
+  </div>
+    <script src="js/application.js"></script>
+</body>
+
 </html>

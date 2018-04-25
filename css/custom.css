@@ -1,17 +1,63 @@
-#things-to-do {
-	font-size: 25px;
+.todos {
+	font-size: 15px;
 	padding: 20px;
 	background-color: #eaebed;
 	margin-top: 20px;
 	box-shadow: 0 3px 2px -4px black;
 	transition:   all 300ms ease-in-out;
+
 }
 
-#things-to-do:hover {
+#shopping-input {
+	margin-bottom: 15px;
+	
+}
+
+#quantity-input {
+	border: 1px solid red;
+}
+
+.todos:hover {
+	display: visible;
 	transform: translate(0,-10px);
 	box-shadow: 0 8px 6px -6px black;
 	cursor:pointer;
 }
+
+.workflow {
+	font-size: 15px;
+	padding: 20px;
+	background-color: #eaebed;
+	margin-top: 20px;
+	box-shadow: 0 3px 2px -4px black;
+	transition:   all 300ms ease-in-out;
+	cursor: pointer;
+
+}
+
+
+
+.workflow:hover {
+	transform: translate(0,-10px);
+	box-shadow: 0 8px 6px -6px black;
+	cursor:pointer;
+}
+
+#title {
+	text-align: center;
+}
+
+#buy-input {
+	margin-bottom: 20px;
+}
+
+#price-input {
+	margin-bottom: 20px;
+}
+
+
+
+
 
 /* look back to todo list
 	will need to createElement
